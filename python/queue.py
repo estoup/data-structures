@@ -12,6 +12,8 @@ class Queue:
 
   def dequeue(self):
     # write your code to removes the data to the Queue following FIFO and return the Queue
+    if not self.queue:
+      return 'Nothing to dequeue'
     self.queue.pop(0)
     self.total -= 1
     return self.queue
